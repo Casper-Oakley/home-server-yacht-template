@@ -16,7 +16,7 @@
           "name": "PGID"
         }
       ],
-      "image": "ghcr.io/linuxserver/prowlarr:develop",
+      "image": "lscr.io/linuxserver/prowlarr:latest",
       "logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/prowlarr.png",
       "name": "prowlarr",
       "platform": "linux",
