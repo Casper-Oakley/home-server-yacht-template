@@ -1,0 +1,45 @@
+{
+  "type": 1,
+  "title": "JellyFin",
+  "name": "container-name",
+  "description": "This is a description.",
+  "logo": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-black.svg",
+  "image": "jellyfin/jellyfin:latest",
+  "note": "Just JellyFin",
+  "categories": [
+    "Films",
+    "TV",
+    "HMC"
+  ],
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "ports": [
+    {
+      "HTTP UI": "8096:8096/tcp",
+      "HTTPS UI": "8920:8920/tcp",
+      "DNLA": "1900:1900/udp",
+      "Discovery": "7359:7359/udp"
+    }
+  ],
+  "network_mode": "bridge",
+  "volumes": [
+    {
+      "container": "/config",
+      "bind": "!config/jellyfin"
+    },
+    {
+      "container": "/cache",
+      "bind": "!cache/jellyfin"
+    },
+    {
+      "container": "/media",
+      "bind": "!media"
+    }
+  ],
+  "sysctls": [
+  ],
+  "cap_add": [
+  ],
+  "env": [
+  ]
+}
