@@ -1,8 +1,8 @@
 {
   "type": 1,
   "title": "JellyFin",
-  "name": "container-name",
-  "description": "This is a description.",
+  "name": "jellyfin",
+  "description": "Home Media Centre for Movie & TV Show streaming.",
   "logo": "https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/icon-solid-black.svg",
   "image": "jellyfin/jellyfin:latest",
   "note": "Just JellyFin",
