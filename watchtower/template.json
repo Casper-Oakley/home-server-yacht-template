@@ -1,0 +1,29 @@
+{
+  "type": 1,
+  "title": "Watchtower",
+  "name": "watchtower",
+  "description": "A container-based solution for automating Docker container base image updates",
+  "logo": "https://containrrr.dev/watchtower/images/logo-450px.png",
+  "image": "containrrr/watchtower:latest",
+  "note": "Just Watchtower",
+  "categories": [
+    "docker"
+  ],
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "ports": [
+  ],
+  "network_mode": "bridge",
+  "volumes": [
+    {
+      "container": "/var/run/docker.sock",
+      "bind": "/var/run/docker.sock"
+    }
+  ],
+  "sysctls": [
+  ],
+  "cap_add": [
+  ],
+  "env": [
+  ]
+}
