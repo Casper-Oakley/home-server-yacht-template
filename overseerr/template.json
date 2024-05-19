@@ -1,0 +1,25 @@
+{
+      "categories": [
+        "Downloaders",
+        "Video"
+      ],
+      "description": "Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem.",
+      "env": [
+      ],
+      "image": "sctx/overseerr:latest",
+      "logo": "https://raw.githubusercontent.com/sct/overseerr/develop/public/android-chrome-512x512.png",
+      "name": "overseerr",
+      "platform": "linux",
+      "ports": [
+        "5055:5055/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Prowlarr",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "!config",
+          "container": "/app/config"
+        }
+      ]
+    }
