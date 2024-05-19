@@ -14,7 +14,7 @@
         "5055:5055/tcp"
       ],
       "restart_policy": "unless-stopped",
-      "title": "Prowlarr",
+      "title": "Overseerr",
       "type": 1,
       "volumes": [
         {
